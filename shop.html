@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shop &vert; Letha – Handcrafted leather shoes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Letha makes handcrafted leather shoes for men. Find your new favorite pair of shoes in our shop!">
+	<meta name="keywords" content="leather shoes, leather shoes for men, leather brogues, leather boots">
+	<meta name="author" content="Asbj&oslash;rn Kallevik">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/c25775ac46.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<header id="page-header" role="banner">
+		<h1>Letha - Shop Leather Shoes Online</h1>
+		<!-- LOGO -->
+		<div id="logo"><a href="index.html" title="Home" role="link"></a></div>
+		<!-- Main navigation -->
+		<nav id="page-navigation" role="navigation">
+			<ul>
+				<a href="index.html" title="Home" role="link"><li>Home</li></a>
+				<a href="shop.html" title="Shop" role="link"><li class="active">Shop</li></a>
+				<a href="about-us.html" title="About us" role="link"><li>About us</li></a>
+				<a href="contact.html" title="Contact" role="link"><li>Contact</li></a>
+			</ul>
+		</nav>
+		<!-- Tools menu -->
+		<section id="page-tools">
+			<nav id="tools-navigation" role="navigation">
+				<ul>
+					<li><i class="fas fa-user"></i></li>
+					<li><i class="fas fa-shopping-cart"></i></li>
+				</ul>
+			</nav>
+			<!-- Search -->
+			<form id="search" role="search">
+				<input id="search-field" type="text" name="search" maxlength="20" placeholder="Search products">
+				<a id="search-button"><i class="fas fa-search"></i></a>
+				<script type="text/javascript" src="scripts/search-field.js"></script>
+			</form>
+		</section>
+	</header>
+	<!-- Breadcrumb -->
+	<div id="breadcrumb">
+		<ul>
+			<li><a href="index.html" title="Home" role="link">Home</a></li>
+			<li>Shop</li>
+		</ul>
+	</div>
+	<!-- Main content -->
+	<main role="main">
+		<header>
+			<h2>Find your leather shoes</h2>
+		</header>
+		<section id="search-filters">
+			<ul>
+				<li><a id="filter-category" href="#">Category <i class="fas fa-caret-down"></i></a></li>
+				<li><a id="filter-size" href="#">Size <i class="fas fa-caret-down"></i></a></li>
+				<li><a id="filter-color" href="#">Color <i class="fas fa-caret-down"></i></a></li>
+				<!-- <li><a id="filter-sort" href="#">Sort by <i class="fas fa-caret-down"></i></a></li> -->
+			</ul>
+			<!-- Filtered search -->
+			<div id="filter-box">
+				<form>
+					<fieldset id="category">
+						<label>
+							<input class="filter" type="checkbox" name="category" value="brogues">Brogues
+						</label>
+						<label>
+							<input class="filter" type="checkbox" name="category" value="boots">Boots
+						</label>
+					</fieldset>
+					<fieldset id="size">
+						<label>
+							<input class="filter" type="checkbox" name="size" value="43">43
+						</label>
+						<label>
+							<input class="filter" type="checkbox" name="size" value="44">44
+						</label>
+					</fieldset>
+					<fieldset id="color">
+						<label>
+							<input class="filter" type="checkbox" name="color" value="beige">Beige
+						</label>
+						<label>
+							<input class="filter" type="checkbox" name="color" value="black">Black
+						</label>
+						<label>
+							<input class="filter" type="checkbox" name="color" value="brown">Brown
+						</label>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<section id="shop-section">
+			<div class="flex item-list" id="search-results">
+				<!-- Products will be listed here -->
+			</div>
+		</section>
+		<section id="product-categories">
+			<h2>Categories</h2>
+			<div class="flex item-list">
+				<div class="category-container">
+					<a href="shop/categories/brogues.html"><h3>BROGUES</h3></a>
+				</div>
+				<div class="category-container">
+					<a href="shop/categories/boots.html"><h3>BOOTS</h3></a>
+				</div>
+			</div>
+		</section>
+		<div id="top"><a href="#" title="Back to top">Back to top <i class="fas fa-arrow-circle-up"></i></a></div>
+	</main>
+	<!-- PAGE FOOTER -->
+	<footer class="flex" id="page-footer" role="contentinfo">
+		<!-- Social links -->
+		<section id="footer-social">
+			<ul>
+				<li><a href="#" role="link" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="#" role="link" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#" role="link" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</section>
+		<!-- Credits -->
+		<section id="credits">
+			<img src="images/letha_logo.png" alt="Letha - Handcrafted Leather Shoes">
+			<p>Course Assignment in Interaction Design, Noroff – Designed by Asbj&oslash;rn Kallevik</p>
+		</section>
+		<!-- Address -->
+		<section id="company-details">
+			<div>
+				<p><b>Address:</b><br>Skomakergata 99<br>5501 Haugesund<br>NORWAY</p>
+			</div>
+		</section>
+	</footer>
+	<script type="text/javascript" src="scripts/products.js"></script>
+</body>
+</html>
