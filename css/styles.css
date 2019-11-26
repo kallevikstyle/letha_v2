@@ -228,6 +228,8 @@ header #shop-button {
 
 header #shop-submenu {
 	opacity: 0;
+	height: 0;
+	overflow: hidden;
 	position: absolute;
 	width: 150px;
 	background-color: #FFF3D9;
@@ -236,12 +238,10 @@ header #shop-submenu {
 }
 header #shop-submenu.showSubMenu {
 	opacity: 1;
-
+	height: auto;
 	-webkit-transition: all 0.4s ease-out;
   	-moz-transition: all 0.4s ease-out;
   	transition: all 0.4s ease-out;
-	
-
 }
 
 header #shop-submenu a {
