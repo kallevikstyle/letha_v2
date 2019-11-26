@@ -199,9 +199,9 @@ header #logo {
 }
 
 header #page-navigation {
+	z-index: 10;
 	margin-left: 50px;
 	margin-bottom: 10px;
-	float: left;
 	position: absolute;
 	bottom: 0;
 	display: inline-block;	
@@ -220,10 +220,6 @@ header nav li.active {
 
 header nav li {
 	margin-right: 0;
-}
-
-header #shop-button {
-
 }
 
 header #shop-submenu {
@@ -263,7 +259,8 @@ header #shop-submenu div:hover {
 header #page-tools {
 	width: 250px;
 	height: 100%;
-	float: right;
+	position: absolute;
+	right: 0;
 }
 
 #page-tools #tools-navigation {
@@ -752,8 +749,51 @@ nav li:hover,
 TABLET STYLES
 ----------------------*/
 @media screen and (min-width: 481px) and (max-width: 799px) {
+
+	/*Page header
+	-----------------------*/
+	header #page-navigation {
+		margin-left: 0;
+		left: 30%;
+	}
+	#page-tools #tools-navigation {
+		margin-top: 10px;
+		margin-right: 25px;
+	}
+
+	#page-tools #search {
+		margin-top: 35px;
+	}
+
+	/*PAge footer
+	------------------------*/
+	footer #credits {
+
+	}
+	footer #company-details {
+		margin-right: 10px;
+	}
+
+
+	/*Index CTA
+	--------------------*/
 	#hero-image {
 		background-image: url('../images/letha_hero_800.jpg');
 	}
+
+	#hero-image #promo-heading {
+		top: 299px;
+	}
+	#hero-image #promo-tagline {
+		top: 410px;
+	}
+	#hero-image .cta-button {
+		bottom: 280px;
+	}
+
+	#featured-section h2 {
+		font-size: 76%;
+	}
+
 
 }
