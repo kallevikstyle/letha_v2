@@ -747,3 +747,13 @@ nav li:hover,
 	display: inline-block;
 	margin: 35px auto auto 150px;
 }
+
+/*--------------------
+TABLET STYLES
+----------------------*/
+@media screen and (min-width: 481px) and (max-width: 799px) {
+	#hero-image {
+		background-image: url('../images/letha_hero_800.jpg');
+	}
+
+}
