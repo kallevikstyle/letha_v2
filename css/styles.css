@@ -231,6 +231,7 @@ header #shop-submenu {
 	height: 0;
 	overflow: hidden;
 	position: absolute;
+	margin-top: 2px;
 	width: 150px;
 	background-color: #FFF3D9;
 	text-align: center;
