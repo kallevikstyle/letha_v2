@@ -10,9 +10,9 @@
 
 		shopButton.addEventListener('mouseleave', function() {
 		//document.querySelector('#shop-submenu').classList.toggle('showSubMenu');
-			//setTimeout(function() {
-			//	shopSubmenu.classList.remove('showSubMenu');
-			//}, 1000);
+			setTimeout(function() {
+				shopSubmenu.classList.remove('showSubMenu');
+			}, 400);
 			
 		});
 	});
