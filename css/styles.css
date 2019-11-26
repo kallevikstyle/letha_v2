@@ -218,7 +218,7 @@ header nav li.active {
 	
 }
 
-header nav li:last-child {
+header nav li {
 	margin-right: 0;
 }
 
