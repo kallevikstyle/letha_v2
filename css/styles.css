@@ -865,7 +865,9 @@ TABLET STYLES
 
 	/*Global
 	------------*/
-
+	#page-header + * {
+		margin-top: 200px;
+	}
 	/*Page header
 	-----------------------*/
 	#page-header {
@@ -876,8 +878,9 @@ TABLET STYLES
 		margin: 10px auto 0 auto;
 	}
 	header #page-navigation {
+		margin-left: 0;
 		margin-bottom: 10px;
-		left: 2%;
+		left: 5%;
 	}
 	header #page-tools {
 		position: absolute;
