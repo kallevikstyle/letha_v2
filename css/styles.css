@@ -773,7 +773,9 @@ TABLET STYLES
 	#page-footer {
 		flex-direction: column;
 	}
-
+	#page-footer #footer-social {
+		margin-bottom: 0;
+	}
 	footer #credits {
 
 	}
