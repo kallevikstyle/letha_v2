@@ -753,6 +753,9 @@ TABLET STYLES
 ----------------------*/
 @media screen and (min-width: 481px) and (max-width: 799px) {
 
+	/*Global
+	------------*/
+
 	/*Page header
 	-----------------------*/
 	header #page-navigation {
