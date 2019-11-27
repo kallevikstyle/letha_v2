@@ -860,3 +860,154 @@ TABLET STYLES
 
 	}
 }
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+	/*Global
+	------------*/
+
+	/*Page header
+	-----------------------*/
+	#page-header {
+		height: 200px;
+	}
+	header #logo {
+		float: none;
+		margin: 10px auto 0 auto;
+	}
+	header #page-navigation {
+		margin-bottom: 10px;
+		left: 2%;
+	}
+	header #page-tools {
+		position: absolute;
+		right: 0;
+	}
+
+	#page-tools #tools-navigation {
+		float: right;
+		margin-top: -70px;
+		margin-right: 5px;
+	}
+	#tools-navigation li {
+		display: block;
+	}
+
+	#page-tools #search {
+		float: none;
+		margin: 20px auto 10px auto;
+
+	}
+
+	/*Page footer
+	------------------------*/
+	#page-footer {
+		flex-direction: column;
+	}
+	#page-footer #footer-social {
+		margin-bottom: 0;
+	}
+	footer #credits {
+
+	}
+	footer #company-details {
+		margin-right: 10px;
+	}
+
+
+	/*Index CTA
+	--------------------*/
+	#hero-image {
+		background-image: url('../images/letha_hero_481.jpg');
+	}
+
+	#hero-image #promo-heading {
+		top: 240px;
+		right: 5px;
+	}
+	#hero-image #promo-heading span {
+		margin-left: 120px;
+	}
+	#hero-image #promo-tagline {
+		top: 350px;
+		right: 5px;
+		letter-spacing: 0.1em;
+	}
+	#hero-image #promo-tagline span {
+		display: inline;
+		margin-left: 0;
+		
+	}
+	#hero-image #promo-tagline p {
+		background-color: #32383C;
+		background-color: rgba(50, 56, 60, 0.5);
+	}
+	#hero-image .cta-button {
+		bottom: 280px;
+	}
+
+	#featured-section {
+		flex-direction: column;
+
+	}
+	#featured-section > div {
+		width: 100%;
+		margin: 10px 0;
+	}
+	#featured-section h2 {
+		font-size: 76%;
+	}
+
+	/*About us*/
+	#about-us {
+		width: 100%;
+		margin: 0;
+	}
+	#about-container {
+		flex-direction: column;
+	}
+	#mood-image {
+		background-image: url('../images/about-us_mood-image_700x234.jpg');
+		background-position: center;
+		margin-left: 0;
+		width: 100%;
+		height: 234px;
+	}
+	/*Contact us*/
+	#contact-container > * {
+		width: 100%;
+	}
+	
+	#newsletter input {
+		width: 52%;
+	}
+	/*Category pages*/
+	#category-details {
+		flex-direction: column-reverse;
+	}
+	#category-image {
+		margin: 0 auto;
+	}
+	#category-image img {
+		width: 100%;
+	}
+
+	/*Product page*/
+	#product-page {
+		flex-direction: column;
+	}
+	#product-description {
+		width: 100%;
+		order: 2;
+		padding: 0 20px;
+	}
+	#product-image {
+		width: 80%;
+		order: 1;
+		margin: 0 auto;
+	}
+	#product-image img {
+		width: 100%;
+
+	}
+}
