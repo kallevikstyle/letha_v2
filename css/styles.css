@@ -878,9 +878,11 @@ TABLET STYLES
 		margin: 10px auto 0 auto;
 	}
 	header #page-navigation {
+		width: 290px;
 		margin-left: 0;
 		margin-bottom: 10px;
-		left: 5%;
+		left: 50%;
+		margin-left: -145px;
 	}
 	header #page-tools {
 		position: static;
