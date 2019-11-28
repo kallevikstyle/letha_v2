@@ -984,9 +984,17 @@ TABLET STYLES
 	#contact-container > * {
 		width: 100%;
 	}
-	
+	#newsletter {
+		text-align: center;
+	}
+
 	#newsletter input {
-		width: 52%;
+		width: 100%;
+		margin-left: -10px;
+	}
+	#newsletter button {
+		margin-top: 5px;
+		width: 200px;
 	}
 	/*Category pages*/
 	#category-details {
