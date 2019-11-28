@@ -28,6 +28,8 @@ function showProductDetails(product) {
 		productText = document.createElement('section'),
 		productSizesSection = document.createElement('section'),
 		productPrice = document.createElement('div'),
+		shopButtons = document.createElement('div'),
+		backToShop = document.createElement('div'),
 		cartButton = document.createElement('div');
 	let shoeSizes = "",
 		productRating = "",
@@ -40,7 +42,10 @@ function showProductDetails(product) {
 	productText.id = "product-text";
 	productSizesSection.id = "sizes";
 	productPrice.id = "product-price";
+	shopButtons.className = "flex";
+	shopButtons.id = "shop-buttons";
 	cartButton.className = "cta-button";
+	backToShop.id = "back-to-shop";
 
 	// Find product's rating
 	while (starCount <= 5) {
@@ -67,6 +72,9 @@ function showProductDetails(product) {
 			<li>Ipsum</li>
 		</ul>
 	`;
+	backToShop.innerHTML = `
+		<a href="../shop.html">Back&nbsp;to&nbsp;shop</a>
+	`;
 	// Loop through all available sizes for product
 	for (let s = 0; s < product.size.length; s++) {
 		shoeSizes += `<option value="${product.size[s]}">${product.size[s]}</option>`;
@@ -82,19 +90,22 @@ function showProductDetails(product) {
 	productPrice.innerHTML = `<p>&dollar;${product.price}</p>`;
 	cartButton.innerHTML = `
 		<a href="#">
-		ADD TO CART <i class="fas fa-shopping-cart"></i>
+		ADD&nbsp;TO&nbsp;CART<i class="fas fa-shopping-cart"></i>
 		</a>
 	`;
 	productImage.innerHTML = `
 		<img src="${product.imageUrl}" alt="${product.name} from Letha">
 	`;
 	
-
+	shopButtons.appendChild(backToShop);
+	shopButtons.appendChild(cartButton);
 	parentContainer.appendChild(productHeader);
 	parentContainer.appendChild(productText);
 	parentContainer.appendChild(productSizesSection);
 	parentContainer.appendChild(productPrice);
-	parentContainer.appendChild(cartButton);
+	parentContainer.appendChild(shopButtons);
+	// parentContainer.appendChild(backToShop);
+	// parentContainer.appendChild(cartButton);
 
 }
 

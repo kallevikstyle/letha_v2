@@ -563,12 +563,13 @@ nav li:hover,
 	color: #A02937;
 }
 #product-description {
-	width: 50%;
+	width: 55%;
 	order: 2;
 	padding: 0 20px;
+	margin: 0 auto;
 }
 #product-image {
-	width: 50%;
+	width: 45%;
 	order: 1;
 }
 #product-image img {
@@ -591,10 +592,17 @@ nav li:hover,
 	margin-top: 40px;
 	margin-right: 20px;
 }
+#shop-buttons {
+	margin: 0 5px;
+}
+#back-to-shop {
+	text-align: right;
+	padding-top: 15px;
+	padding-right: 20px;
+	flex: 1;
+}
 #product-page .cta-button {
-	display: inline-block;
-	float: right;
-	margin-right: 20px;
+
 }
 #product-page .cta-button:after {
 	content: "";
@@ -849,7 +857,7 @@ TABLET STYLES
 	#product-description {
 		width: 100%;
 		order: 2;
-		padding: 0 20px;
+		padding: 0;
 	}
 	#product-image {
 		width: 80%;
@@ -1017,7 +1025,7 @@ TABLET STYLES
 	#product-description {
 		width: 100%;
 		order: 2;
-		padding: 0 20px;
+		padding: 0;
 	}
 	#product-image {
 		width: 80%;
@@ -1026,6 +1034,9 @@ TABLET STYLES
 	}
 	#product-image img {
 		width: 100%;
-
+	}
+	#product-page .cta-button {
+		font-size: 100%;
+		padding: 12px 20px;
 	}
 }
