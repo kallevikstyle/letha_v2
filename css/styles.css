@@ -883,8 +883,10 @@ TABLET STYLES
 		left: 5%;
 	}
 	header #page-tools {
-		position: absolute;
-		right: 0;
+		position: static;
+		text-align: center;
+		width: 100%;
+		height: auto;
 	}
 
 	#page-tools #tools-navigation {
@@ -898,6 +900,7 @@ TABLET STYLES
 
 	#page-tools #search {
 		float: none;
+		display: inline-block;
 		margin: 20px auto 10px auto;
 	}
 
