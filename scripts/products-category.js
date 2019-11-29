@@ -97,7 +97,7 @@ function displayProducts(parentContainer, product) {
 
 // Get product data from JSON
 (function() {
-	 fetch('http://kallevikstyle.no/ixd-ca/json/shoes.json')
+	 fetch('http://kallevikstyle.no/portfolio1/letha/json/shoes.json')
 	 .then(result => result.json())
 	 .then((shoes) => {
 	 	showAllProducts(shoes);
