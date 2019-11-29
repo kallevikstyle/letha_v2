@@ -241,7 +241,7 @@ function displayProducts(parentContainer, product) {
 	// Construct the element hierarchy
 	productLink.setAttribute("href", productUrl);
 	productImage.innerHTML = `
-	<img src="${product.imageUrl}" alt="${product.name}">
+	<img src="${product.thumbnail}" alt="${product.name}">
 	`;
 	productTitle.innerHTML = `
 	<h3>${product.name}</h3>
@@ -343,7 +343,7 @@ function displayProducts(parentContainer, product) {
     "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
     "shortdescription": "The casual and stylish boots",
     "imageUrl": "http://kallevikstyle.no/portfolio1/letha/images/products/large/product_urbana_large.jpeg",
-    "thumbnail": "http://kallevikstyle.no/portfolio1/letha/images/products/thumbnail/product_urbana_280.jpg",
+    "thumbnail": "http://kallevikstyle.no/portfolio1/letha/images/products/thumbnails/product_urbana_280.jpg",
     "id": 5,
     "category": "boots",
     "rating": 4,
