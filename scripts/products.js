@@ -11,7 +11,7 @@ function showAllProducts(shoes){
 		const searchText = window.location.search.slice(8),
 			searchPattern = new RegExp(searchText, 'i');
 		let searchResult = shoes.filter(function(shoes) {
-			return searchPattern.test(shoes.name),;
+			return searchPattern.test(shoes.name);
 		});
 		let searchTextArr = [];
 		// Displaying 'showing results for'
