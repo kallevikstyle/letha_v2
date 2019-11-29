@@ -214,7 +214,8 @@ function displayProducts(parentContainer, product) {
 		productTitle = document.createElement('div'),
 		productDetails = document.createElement('div')
 		productStars = document.createElement('div'),
-		productPrice = document.createElement('div');
+		productPrice = document.createElement('div'),
+		productDiscount = document.createElement('div');
 	let starCount = 1,
 		productRating = "";
 
@@ -226,6 +227,7 @@ function displayProducts(parentContainer, product) {
 	productDetails.className = "product-details";
 	productStars.className = "product-stars";
 	productPrice.className = "product-price";
+	productDiscount.className = "discount";
 
 	// Find product's rating
 	while (starCount <= 5) {
@@ -253,6 +255,7 @@ function displayProducts(parentContainer, product) {
 	productPrice.innerHTML = `
 	&dollar;${product.price}
 	`;
+
 	productDetails.appendChild(productStars);
 	productDetails.appendChild(productPrice);
 	productTeaser.appendChild(productTitle);
@@ -261,6 +264,13 @@ function displayProducts(parentContainer, product) {
 	itemContainer.appendChild(productTeaser);
 	productLink.appendChild(itemContainer);
 	parentContainer.appendChild(productLink);
+
+	// Check if there is a discount
+	if (product.discount) {
+		productDiscount.innerHTML = `&minus;${product.discount}&percnt;`;
+		
+		itemContainer.appendChild(productDiscount);
+	}
 }
 
 // Get product data from JSON

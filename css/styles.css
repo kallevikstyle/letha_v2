@@ -122,6 +122,7 @@ a {
 }
 .item-container {
 	background-color: #ffffff;
+	position: relative;
 	margin: 10px;
 	width: 280px;
 	height: 280px;
@@ -134,10 +135,14 @@ a {
 }
 .discount {
 	background-color: #FFDA51;
+	position: absolute;
+	top: -8px;
+	right: -8px;
 	display: inline-block;
 	padding: 2px 10px;
 	font-size: 120%;
 	border-radius: 2px;
+	box-shadow: 0px 0px 4px -1px rgba(50, 56, 60,0.75);
 }
 .header-image {
 	background-repeat: no-repeat;
