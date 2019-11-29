@@ -468,6 +468,10 @@ nav li:hover,
 #filter-box label {
 	display: block;
 }
+#results-for span {
+	text-decoration: underline;
+	font-style: italic;
+}
 
 /*Product containers
 -------------------*/

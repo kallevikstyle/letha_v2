@@ -8,11 +8,15 @@ function showAllProducts(shoes){
 		}
 	} else if (window.location.search.includes("search")) {
 		// Filter by search field
-		const searchText = window.location.search.slice(8); 
+		const searchText = window.location.search.slice(8),
 			searchPattern = new RegExp(searchText, 'i');
 		let searchResult = shoes.filter(function(shoes) {
-			return searchPattern.test(shoes.name);
+			return searchPattern.test(shoes.name),;
 		});
+		let searchTextArr = [];
+		// Displaying 'showing results for'
+		searchTextArr.push(searchText);
+		showingResultsFor(searchTextArr);
 
 		for (let i = 0; i < searchResult.length; i++) {
 			displayProducts(searchResultsContainer, searchResult[i]);
@@ -143,11 +147,35 @@ function findSearchResults(shoes, activeFilterNames, activeFilterValues) {
 	// Convert SET to ARRAY
 	shoesResult = Array.from(shoesResult);
 	
+	// Display on page which filters are active
+	showingResultsFor(activeFilterValues);
+
 	// Display products on page
 	searchResultsContainer.innerHTML = "";
 	for (let item = 0; item < shoesResult.length; item++) {
 		displayProducts(searchResultsContainer, shoesResult[item]);
 	}
+}
+
+// Function to display to user which filters are being searched for
+function showingResultsFor(filters) {
+	const parentContainer = document.querySelector('#results-for');
+	let html = "<p>Showing results for ";
+
+	// Adding filters to html variable
+	for (let i = 0; i < filters.length; i++) {
+		if (i === 0 && filters.length === 1) {
+			html += "<span>" + filters[i] + "</span>" + ".";
+		} else if (i === (filters.length - 1)) {
+			html += "and " + "<span>" + filters[i] + "</span>" + ".";
+		} else {
+			html += "<span>" + filters[i] + "</span>" + ", ";
+		}
+	}
+	html += "</p>";
+
+	// Appending the html to parent div
+	parentContainer.innerHTML = html;
 }
 // Search for match by filters in shoes.json
 function matchFiltersWithProducts(filterName, filterValue, product) {
