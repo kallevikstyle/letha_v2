@@ -30,7 +30,8 @@ function showProductDetails(product) {
 		productPrice = document.createElement('div'),
 		shopButtons = document.createElement('div'),
 		backToShop = document.createElement('div'),
-		cartButton = document.createElement('div');
+		cartButton = document.createElement('div'),
+		productDiscount = document.createElement('div');
 	let shoeSizes = "",
 		productRating = "",
 		starCount = 1;
@@ -46,6 +47,7 @@ function showProductDetails(product) {
 	shopButtons.id = "shop-buttons";
 	cartButton.className = "cta-button";
 	backToShop.id = "back-to-shop";
+	productDiscount.className = "discount";
 
 	// Find product's rating
 	while (starCount <= 5) {
@@ -104,9 +106,14 @@ function showProductDetails(product) {
 	parentContainer.appendChild(productSizesSection);
 	parentContainer.appendChild(productPrice);
 	parentContainer.appendChild(shopButtons);
-	// parentContainer.appendChild(backToShop);
-	// parentContainer.appendChild(cartButton);
 
+
+	// Check if there is a discount
+	if (product.discount) {
+		productDiscount.innerHTML = `&minus;${product.discount}&percnt;`;
+		
+		productImage.appendChild(productDiscount);
+	}
 }
 
 // Show an error message if ID doesn't exist

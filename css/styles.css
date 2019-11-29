@@ -168,7 +168,8 @@ p,
 a,
 h3,
 #breadcrumb,
-#search-filters {
+#search-filters,
+.discount {
 	font-family: "opensans-regular", arial, sans-serif;
 }
 
@@ -587,6 +588,7 @@ nav li:hover,
 #product-image {
 	width: 45%;
 	order: 1;
+	position: relative;
 }
 #product-image img {
 	width: 100%;
