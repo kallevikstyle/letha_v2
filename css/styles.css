@@ -527,6 +527,13 @@ nav li:hover,
 	margin-top: 56px;
 	text-align: right;
 }
+
+.product-price span,
+#product-price span {
+	margin-right: 15px;
+	color: #A02937;
+	text-decoration: line-through;
+}
 /*Categories section
 -------------*/
 #product-categories h2 {
@@ -609,6 +616,7 @@ nav li:hover,
 	font-size: 120%;
 	margin-top: 40px;
 	margin-right: 20px;
+	margin-bottom: 10px;
 }
 #shop-buttons {
 	margin: 0 5px;
@@ -620,13 +628,20 @@ nav li:hover,
 	flex: 1;
 }
 #product-page .cta-button {
-
+	padding: 0;
+}
+#product-page .cta-button a {
+	display: inline-block;
+	padding: 12px 50px;
 }
 #product-page .cta-button:after {
 	content: "";
 }
 #product-page .cta-button i {
 	margin-left: 10px;
+}
+#product-page .cta-button:hover {
+	box-shadow: 2px 2px 8px -1px rgba(50, 56, 60,0.75);
 }
 #product-suggestions {
 	margin-left: 2.5%;

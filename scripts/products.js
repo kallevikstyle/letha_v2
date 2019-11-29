@@ -215,7 +215,10 @@ function displayProducts(parentContainer, product) {
 		productDetails = document.createElement('div')
 		productStars = document.createElement('div'),
 		productPrice = document.createElement('div'),
-		productDiscount = document.createElement('div');
+		productDiscount = document.createElement('div'),
+		discountedPrice = function(price, discount) {
+			return price - (price * (discount / 100));
+		};
 	let starCount = 1,
 		productRating = "";
 
@@ -270,6 +273,11 @@ function displayProducts(parentContainer, product) {
 		productDiscount.innerHTML = `&minus;${product.discount}&percnt;`;
 		
 		itemContainer.appendChild(productDiscount);
+
+		// Display old price and discounted price
+		productPrice.innerHTML = `
+			<span>&dollar;${product.price}</span>&dollar;${discountedPrice(product.price, product.discount)}
+		`;
 	}
 }
 
