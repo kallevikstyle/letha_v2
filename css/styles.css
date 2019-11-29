@@ -467,6 +467,7 @@ nav li:hover,
 	margin-bottom: 40px;
 }
 #filter-box {
+	z-index: 10;
 	background-color: #32383C;
 	color: #FFF3D9;
 	font-size: 90%;
