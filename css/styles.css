@@ -218,7 +218,10 @@ header #page-navigation {
 	margin-bottom: 10px;
 	position: absolute;
 	bottom: 0;
-	display: inline-block;	
+	display: inline-block;
+}
+#page-navigation i {
+	font-size: 80%;
 }
 
 header nav li {
